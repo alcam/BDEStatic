@@ -5,6 +5,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Add spacing for content below fixed header */
+body {
+    padding-top: 6rem; /* Adjust this value based on your header height */
+}
+
+/* Ensure main content doesn't scroll under header */
+main {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+/* Header styles */
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 50;
+}
+
 /* Custom transitions */
 .transition {
     transition: all 0.3s ease;
