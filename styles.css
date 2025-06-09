@@ -1,0 +1,44 @@
+/* Custom styles beyond Tailwind */
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Image hover effects */
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+/* Custom focus styles for better accessibility */
+a:focus, button:focus {
+    outline: 2px solid #CD853F;
+    outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F6E2A2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CD853F;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8B4513;
+} 

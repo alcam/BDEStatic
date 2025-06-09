@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Day Ever Coffee & Crepes - Longmont, CO</title>
+    <meta name="description" content="A joyful café in Longmont, CO, empowering adults with disabilities while serving amazing coffee and crepes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bde-gold': '#E8C25D',
+                        'bde-cream': '#F6E2A2',
+                        'bde-orange': '#CD853F',
+                        'bde-brown': '#8B4513',
+                    },
+                    fontFamily: {
+                        'quicksand': ['Quicksand', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="w-24">
+                <img src="images/logo.png" alt="Best Day Ever Coffee & Crepes" class="w-full h-auto">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Home</a>
+                <a href="/menu.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Menu</a>
+                <a href="/about.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">About</a>
+                <a href="/visit.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Visit</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6 text-bde-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Home</a>
+                <a href="/menu.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Menu</a>
+                <a href="/about.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">About</a>
+                <a href="/visit.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Visit</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-bde-cream">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="font-quicksand font-bold text-4xl md:text-5xl text-bde-brown mb-4">
+                        Where Every Day is the Best Day Ever!
+                    </h1>
+                    <p class="text-lg md:text-xl text-bde-orange mb-8">
+                        Join us for amazing coffee, delicious crepes, and the warmest smiles in Longmont.
+                    </p>
+                    <a href="/menu.html" class="inline-block bg-bde-orange text-white font-quicksand font-semibold px-8 py-3 rounded-full hover:bg-bde-brown transition">
+                        View Our Menu
+                    </a>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <!-- Placeholder for hero image -->
+                    <div class="bg-gray-200 h-64 rounded-lg shadow-lg">
+                        <!-- Replace with actual image -->
+                        <div class="h-full flex items-center justify-center text-gray-500">Hero Image Placeholder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Our Mission</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-bde-brown mb-6">
+                    At Best Day Ever, we believe in creating opportunities and fostering independence for adults with disabilities through meaningful employment in a joyful café environment.
+                </p>
+                <p class="text-lg text-bde-brown">
+                    Our Besties are the heart of our café, bringing smiles and warmth to every cup of coffee and crepe we serve.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bde-brown text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Visit Us</h3>
+                    <p>516 Coffman St</p>
+                    <p>Longmont, CO 80501</p>
+                    <p class="mt-4">Mon–Sat: 7AM–7PM</p>
+                    <p>Closed Sundays</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Contact</h3>
+                    <p>Phone: (720) 340-3600</p>
+                    <p>Email: bestdayever24@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-bde-cream transition">Facebook</a>
+                        <a href="#" class="hover:text-bde-cream transition">Instagram</a>
+                        <a href="#" class="hover:text-bde-cream transition">Joy House</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                <p>&copy; 2024 Best Day Ever Coffee & Crepes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

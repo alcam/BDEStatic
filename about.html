@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Day Ever Coffee & Crepes</title>
+    <meta name="description" content="Learn about our mission to empower adults with disabilities through meaningful employment at Best Day Ever Coffee & Crepes in Longmont, CO.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bde-gold': '#E8C25D',
+                        'bde-cream': '#F6E2A2',
+                        'bde-orange': '#CD853F',
+                        'bde-brown': '#8B4513',
+                    },
+                    fontFamily: {
+                        'quicksand': ['Quicksand', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="w-24">
+                <img src="images/logo.png" alt="Best Day Ever Coffee & Crepes" class="w-full h-auto">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Home</a>
+                <a href="/menu.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Menu</a>
+                <a href="/about.html" class="font-quicksand font-semibold text-bde-orange">About</a>
+                <a href="/visit.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Visit</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6 text-bde-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Home</a>
+                <a href="/menu.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Menu</a>
+                <a href="/about.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-orange">About</a>
+                <a href="/visit.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Visit</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Header -->
+    <section class="pt-24 pb-12 bg-bde-cream">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-quicksand font-bold text-4xl md:text-5xl text-bde-brown mb-4">Our Story</h1>
+            <p class="text-lg text-bde-orange max-w-2xl mx-auto">
+                More than just a café – we're a community dedicated to creating opportunities and spreading joy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-quicksand font-bold text-3xl text-bde-brown mb-6">Our Mission</h2>
+                    <p class="text-lg text-bde-brown mb-4">
+                        At Best Day Ever Coffee & Crepes, we believe that everyone deserves the opportunity to showcase their unique talents and contribute meaningfully to their community.
+                    </p>
+                    <p class="text-lg text-bde-brown">
+                        Our mission is to create an inclusive workplace that empowers adults with disabilities, providing them with valuable job skills, confidence, and a sense of purpose – all while serving delicious coffee and crepes to our wonderful community.
+                    </p>
+                </div>
+                <!-- Mission Image Placeholder -->
+                <div class="bg-gray-200 h-64 rounded-lg shadow-lg mb-8">
+                    <div class="h-full flex items-center justify-center text-gray-500">Mission Image Placeholder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Besties -->
+    <section class="py-12 bg-bde-cream">
+        <div class="container mx-auto px-4">
+            <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-12">Meet Our Besties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Bestie Cards (Placeholders) -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gray-200 h-48">
+                        <div class="h-full flex items-center justify-center text-gray-500">Bestie Image</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-2">Barista Training</h3>
+                        <p class="text-gray-600">
+                            Our Besties learn the art of coffee-making, from grinding beans to crafting the perfect latte.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gray-200 h-48">
+                        <div class="h-full flex items-center justify-center text-gray-500">Bestie Image</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-2">Customer Service</h3>
+                        <p class="text-gray-600">
+                            Building confidence through meaningful interactions with our wonderful customers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gray-200 h-48">
+                        <div class="h-full flex items-center justify-center text-gray-500">Bestie Image</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-2">Crepe Making</h3>
+                        <p class="text-gray-600">
+                            Learning culinary skills and creativity through our signature crepe recipes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Our Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-12">
+                    <div>
+                        <div class="text-4xl font-bold text-bde-orange mb-2">20+</div>
+                        <p class="text-bde-brown">Besties Employed</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-bde-orange mb-2">1000+</div>
+                        <p class="text-bde-brown">Smiles Shared Daily</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-bde-orange mb-2">100%</div>
+                        <p class="text-bde-brown">Joy Guaranteed</p>
+                    </div>
+                </div>
+                <p class="text-center text-lg text-bde-brown">
+                    Every cup of coffee and crepe served at Best Day Ever helps create meaningful employment opportunities and brighter futures for our Besties.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Mission -->
+    <section class="py-12 bg-bde-cream">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-quicksand font-bold text-3xl text-bde-brown mb-6">Join Our Mission</h2>
+            <p class="text-lg text-bde-brown mb-8 max-w-2xl mx-auto">
+                There are many ways to support our mission of creating inclusive employment opportunities:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-3">Visit Us</h3>
+                    <p class="text-gray-600">Enjoy our coffee and crepes while supporting our mission</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-3">Spread the Word</h3>
+                    <p class="text-gray-600">Share our story with friends and family</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-3">Partner With Us</h3>
+                    <p class="text-gray-600">Explore business partnership opportunities</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-3">Donate</h3>
+                    <p class="text-gray-600">Support our training and employment programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bde-brown text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Visit Us</h3>
+                    <p>516 Coffman St</p>
+                    <p>Longmont, CO 80501</p>
+                    <p class="mt-4">Mon–Sat: 7AM–7PM</p>
+                    <p>Closed Sundays</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Contact</h3>
+                    <p>Phone: (720) 340-3600</p>
+                    <p>Email: bestdayever24@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-bde-cream transition">Facebook</a>
+                        <a href="#" class="hover:text-bde-cream transition">Instagram</a>
+                        <a href="#" class="hover:text-bde-cream transition">Joy House</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                <p>&copy; 2024 Best Day Ever Coffee & Crepes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

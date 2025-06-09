@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Best Day Ever Coffee & Crepes</title>
+    <meta name="description" content="Explore our delicious menu of specialty coffee drinks and sweet & savory crepes at Best Day Ever Coffee & Crepes in Longmont, CO.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bde-gold': '#E8C25D',
+                        'bde-cream': '#F6E2A2',
+                        'bde-orange': '#CD853F',
+                        'bde-brown': '#8B4513',
+                    },
+                    fontFamily: {
+                        'quicksand': ['Quicksand', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="w-24">
+                <img src="images/logo.png" alt="Best Day Ever Coffee & Crepes" class="w-full h-auto">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Home</a>
+                <a href="/menu.html" class="font-quicksand font-semibold text-bde-orange">Menu</a>
+                <a href="/about.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">About</a>
+                <a href="/visit.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Visit</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6 text-bde-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Home</a>
+                <a href="/menu.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-orange">Menu</a>
+                <a href="/about.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">About</a>
+                <a href="/visit.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Visit</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Header -->
+    <section class="pt-24 pb-12 bg-bde-cream">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-quicksand font-bold text-4xl md:text-5xl text-bde-brown mb-4">Our Menu</h1>
+            <p class="text-lg text-bde-orange max-w-2xl mx-auto">
+                Handcrafted coffee drinks and made-to-order crepes prepared with love by our amazing Besties.
+            </p>
+        </div>
+    </section>
+
+    <!-- Coffee Menu -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Coffee & Beverages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Hot Coffee -->
+                <div class="bg-bde-cream rounded-lg p-6 shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-2xl text-bde-brown mb-4">Hot Coffee</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="font-medium">House Coffee</span>
+                            <span class="text-bde-orange">$3.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Espresso</span>
+                            <span class="text-bde-orange">$3.00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Cappuccino</span>
+                            <span class="text-bde-orange">$4.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Latte</span>
+                            <span class="text-bde-orange">$4.50</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Mocha</span>
+                            <span class="text-bde-orange">$4.75</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cold Coffee -->
+                <div class="bg-bde-cream rounded-lg p-6 shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-2xl text-bde-brown mb-4">Cold Coffee</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="font-medium">Iced Coffee</span>
+                            <span class="text-bde-orange">$3.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Cold Brew</span>
+                            <span class="text-bde-orange">$4.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Iced Latte</span>
+                            <span class="text-bde-orange">$4.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Frappuccino</span>
+                            <span class="text-bde-orange">$5.25</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other Beverages -->
+                <div class="bg-bde-cream rounded-lg p-6 shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-2xl text-bde-brown mb-4">Other Beverages</h3>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between">
+                            <span class="font-medium">Hot Chocolate</span>
+                            <span class="text-bde-orange">$3.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Chai Latte</span>
+                            <span class="text-bde-orange">$4.25</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Tea</span>
+                            <span class="text-bde-orange">$2.75</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="font-medium">Italian Soda</span>
+                            <span class="text-bde-orange">$3.50</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crepes Menu -->
+    <section class="py-12 bg-bde-cream">
+        <div class="container mx-auto px-4">
+            <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Crepes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Sweet Crepes -->
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-2xl text-bde-brown mb-4">Sweet Crepes</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Nutella & Banana</span>
+                                <span class="text-bde-orange">$8.50</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Nutella spread, fresh bananas, whipped cream</p>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Berry Bliss</span>
+                                <span class="text-bde-orange">$9.50</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Mixed berries, vanilla cream, powdered sugar</p>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">S'mores</span>
+                                <span class="text-bde-orange">$8.75</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Chocolate, marshmallow, graham cracker crumbs</p>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Caramel Apple</span>
+                                <span class="text-bde-orange">$9.00</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Cinnamon apples, caramel sauce, vanilla ice cream</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Savory Crepes -->
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <h3 class="font-quicksand font-semibold text-2xl text-bde-brown mb-4">Savory Crepes</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Ham & Cheese</span>
+                                <span class="text-bde-orange">$9.50</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Black forest ham, Swiss cheese, Dijon mustard</p>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Veggie Delight</span>
+                                <span class="text-bde-orange">$9.75</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Spinach, mushrooms, tomatoes, feta cheese</p>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Chicken Pesto</span>
+                                <span class="text-bde-orange">$10.50</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Grilled chicken, pesto, mozzarella, tomatoes</p>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Breakfast</span>
+                                <span class="text-bde-orange">$10.00</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Eggs, bacon, cheddar cheese, potatoes</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Add-ons & Extras</h2>
+            <div class="max-w-2xl mx-auto bg-bde-cream rounded-lg p-6 shadow-lg">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-4">Coffee Add-ons</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Extra Shot</span>
+                                <span class="text-bde-orange">$0.75</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Flavor Syrup</span>
+                                <span class="text-bde-orange">$0.50</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Whipped Cream</span>
+                                <span class="text-bde-orange">$0.50</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Alternative Milk</span>
+                                <span class="text-bde-orange">$0.75</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-4">Crepe Add-ons</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Extra Protein</span>
+                                <span class="text-bde-orange">$2.00</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Extra Cheese</span>
+                                <span class="text-bde-orange">$1.50</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Extra Sauce</span>
+                                <span class="text-bde-orange">$0.75</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Add Ice Cream</span>
+                                <span class="text-bde-orange">$2.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bde-brown text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Visit Us</h3>
+                    <p>516 Coffman St</p>
+                    <p>Longmont, CO 80501</p>
+                    <p class="mt-4">Mon–Sat: 7AM–7PM</p>
+                    <p>Closed Sundays</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Contact</h3>
+                    <p>Phone: (720) 340-3600</p>
+                    <p>Email: bestdayever24@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-bde-cream transition">Facebook</a>
+                        <a href="#" class="hover:text-bde-cream transition">Instagram</a>
+                        <a href="#" class="hover:text-bde-cream transition">Joy House</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                <p>&copy; 2024 Best Day Ever Coffee & Crepes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

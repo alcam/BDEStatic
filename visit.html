@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Us - Best Day Ever Coffee & Crepes</title>
+    <meta name="description" content="Visit Best Day Ever Coffee & Crepes in Longmont, CO. Find our location, hours, and contact information.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bde-gold': '#E8C25D',
+                        'bde-cream': '#F6E2A2',
+                        'bde-orange': '#CD853F',
+                        'bde-brown': '#8B4513',
+                    },
+                    fontFamily: {
+                        'quicksand': ['Quicksand', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white">
+    <!-- Header Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="/" class="w-24">
+                <img src="images/logo.png" alt="Best Day Ever Coffee & Crepes" class="w-full h-auto">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Home</a>
+                <a href="/menu.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Menu</a>
+                <a href="/about.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">About</a>
+                <a href="/visit.html" class="font-quicksand font-semibold text-bde-orange">Visit</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6 text-bde-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Home</a>
+                <a href="/menu.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Menu</a>
+                <a href="/about.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">About</a>
+                <a href="/visit.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-orange">Visit</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Visit Header -->
+    <section class="pt-24 pb-12 bg-bde-cream">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-quicksand font-bold text-4xl md:text-5xl text-bde-brown mb-4">Visit Us</h1>
+            <p class="text-lg text-bde-orange max-w-2xl mx-auto">
+                Come experience the joy of Best Day Ever Coffee & Crepes in downtown Longmont.
+            </p>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Map Placeholder -->
+                <div class="bg-gray-200 rounded-lg shadow-lg min-h-[400px]">
+                    <div class="h-full flex items-center justify-center text-gray-500">
+                        Map Placeholder
+                        <!-- Replace with actual map embed -->
+                    </div>
+                </div>
+                
+                <!-- Location Info -->
+                <div class="flex flex-col justify-center">
+                    <div class="bg-bde-cream rounded-lg p-8 shadow-lg">
+                        <h2 class="font-quicksand font-bold text-3xl text-bde-brown mb-6">Find Us</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-2">Address</h3>
+                                <p class="text-bde-brown">516 Coffman St</p>
+                                <p class="text-bde-brown">Longmont, CO 80501</p>
+                            </div>
+                            <div>
+                                <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-2">Hours</h3>
+                                <p class="text-bde-brown">Monday – Saturday: 7AM – 7PM</p>
+                                <p class="text-bde-brown">Closed Sundays</p>
+                            </div>
+                            <div>
+                                <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-2">Contact</h3>
+                                <p class="text-bde-brown">Phone: (720) 340-3600</p>
+                                <p class="text-bde-brown">Email: bestdayever24@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parking Info -->
+    <section class="py-12 bg-bde-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Parking Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-lg">
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-4">Street Parking</h3>
+                        <p class="text-gray-600">
+                            Free street parking is available along Coffman Street and surrounding downtown areas.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-lg">
+                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-4">Public Lots</h3>
+                        <p class="text-gray-600">
+                            Several public parking lots are located within a short walking distance of our café.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Get in Touch</h2>
+                <form class="space-y-6" id="contact-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-bde-brown font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-bde-orange">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-bde-brown font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-bde-orange">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-bde-brown font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required
+                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-bde-orange">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-bde-brown font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-bde-orange"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-bde-orange text-white font-quicksand font-semibold px-8 py-3 rounded-full hover:bg-bde-brown transition">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bde-brown text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Visit Us</h3>
+                    <p>516 Coffman St</p>
+                    <p>Longmont, CO 80501</p>
+                    <p class="mt-4">Mon–Sat: 7AM–7PM</p>
+                    <p>Closed Sundays</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Contact</h3>
+                    <p>Phone: (720) 340-3600</p>
+                    <p>Email: bestdayever24@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="font-quicksand font-semibold text-xl mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-bde-cream transition">Facebook</a>
+                        <a href="#" class="hover:text-bde-cream transition">Instagram</a>
+                        <a href="#" class="hover:text-bde-cream transition">Joy House</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm">
+                <p>&copy; 2024 Best Day Ever Coffee & Crepes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 
