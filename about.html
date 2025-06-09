@@ -7,6 +7,7 @@
     <meta name="description" content="Learn about our mission to empower adults with disabilities through meaningful employment at Best Day Ever Coffee & Crepes in Longmont, CO.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script>
         tailwind.config = {
@@ -28,35 +29,8 @@
     </script>
 </head>
 <body class="font-inter bg-white">
-    <!-- Header Navigation -->
-    <header class="fixed w-full bg-white shadow-md z-50">
-        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/" class="w-24">
-                <img src="images/logo.png" alt="Best Day Ever Coffee & Crepes" class="w-full h-auto">
-            </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="/" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Home</a>
-                <a href="/menu.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Menu</a>
-                <a href="/about.html" class="font-quicksand font-semibold text-bde-orange">About</a>
-                <a href="/visit.html" class="font-quicksand font-semibold text-bde-brown hover:text-bde-orange transition">Visit</a>
-            </div>
-            <!-- Mobile menu button -->
-            <button class="md:hidden" id="mobile-menu-button">
-                <svg class="w-6 h-6 text-bde-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </nav>
-        <!-- Mobile menu -->
-        <div class="hidden md:hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="/" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Home</a>
-                <a href="/menu.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Menu</a>
-                <a href="/about.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-orange">About</a>
-                <a href="/visit.html" class="block px-3 py-2 font-quicksand font-semibold text-bde-brown hover:text-bde-orange">Visit</a>
-            </div>
-        </div>
-    </header>
+    <!-- Header -->
+    <div data-include="header"></div>
 
     <!-- About Header -->
     <section class="pt-24 pb-12 bg-bde-cream">
@@ -189,44 +163,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-bde-brown text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="font-quicksand font-semibold text-xl mb-4">Visit Us</h3>
-                    <p>516 Coffman St</p>
-                    <p>Longmont, CO 80501</p>
-                    <p class="mt-4">Mon–Sat: 7AM–7PM</p>
-                    <p>Closed Sundays</p>
-                </div>
-                <div>
-                    <h3 class="font-quicksand font-semibold text-xl mb-4">Contact</h3>
-                    <p>Phone: (720) 340-3600</p>
-                    <p>Email: bestdayever24@gmail.com</p>
-                </div>
-                <div>
-                    <h3 class="font-quicksand font-semibold text-xl mb-4">Connect</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-bde-cream transition">Facebook</a>
-                        <a href="#" class="hover:text-bde-cream transition">Instagram</a>
-                        <a href="#" class="hover:text-bde-cream transition">Joy House</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8 text-center text-sm">
-                <p>&copy; 2024 Best Day Ever Coffee & Crepes. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div data-include="footer"></div>
 
-    <!-- Mobile menu JavaScript -->
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+    <!-- Include the components script -->
+    <script src="/js/includes.js"></script>
 </body>
 </html> 
