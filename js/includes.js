@@ -25,6 +25,17 @@ async function includeHTML() {
             const response = await fetch('/components/footer.html');
             const html = await response.text();
             footerElement.innerHTML = html;
+            
+            // Execute any scripts in the footer
+            const scripts = footerElement.getElementsByTagName('script');
+            Array.from(scripts).forEach(script => {
+                const newScript = document.createElement('script');
+                Array.from(script.attributes).forEach(attr => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+                newScript.textContent = script.textContent;
+                script.parentNode.replaceChild(newScript, script);
+            });
         } catch (error) {
             console.error('Error loading footer:', error);
         }

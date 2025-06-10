@@ -39,7 +39,12 @@
             </div>
         </div>
         <div class="mt-8 text-center text-sm">
-            <p>&copy; 2024 Best Day Ever Coffee & Crepes. All rights reserved.</p>
+            <p>&copy; <span id="copyright-year"></span> Best Day Ever Coffee & Crepes. All rights reserved.</p>
         </div>
     </div>
+    <script>
+        (function() {
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        })();
+    </script>
 </footer> 
