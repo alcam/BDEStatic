@@ -37,7 +37,7 @@
     <div data-include="header"></div>
 
     <!-- Menu Header -->
-    <section class="pt-24 pb-12 bg-bde-cream">
+    <section class="sticky top-24 z-40 bg-bde-cream py-6 shadow-md">
         <div class="container mx-auto px-4 text-center">
             <h1 class="font-quicksand font-bold text-4xl md:text-5xl text-bde-brown mb-4">Our Menu</h1>
             <div class="max-w-3xl mx-auto">
@@ -46,7 +46,7 @@
                     people with special abilities. We hope we can help you have the best day ever!
                 </p>
                 <!-- Menu Navigation -->
-                <div class="flex flex-wrap justify-center gap-4 mb-4">
+                <div class="flex flex-wrap justify-center gap-4">
                     <a href="#coffee" class="px-6 py-2 bg-bde-brown text-white rounded-full hover:bg-bde-orange transition font-quicksand">Coffee</a>
                     <a href="#specialty-drinks" class="px-6 py-2 bg-bde-brown text-white rounded-full hover:bg-bde-orange transition font-quicksand">Specialty Drinks</a>
                     <a href="#crepes" class="px-6 py-2 bg-bde-brown text-white rounded-full hover:bg-bde-orange transition font-quicksand">Crepes</a>
@@ -57,7 +57,7 @@
     </section>
 
     <!-- Coffee Menu -->
-    <section id="coffee" class="py-12 bg-white scroll-mt-16">
+    <section id="coffee" class="py-12 bg-white scroll-mt-48">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
                 <div class="md:w-1/3 text-center order-2 md:order-1">
@@ -200,7 +200,7 @@
     </section>
 
     <!-- Specialty Drinks -->
-    <section id="specialty-drinks" class="py-12 bg-bde-cream scroll-mt-16">
+    <section id="specialty-drinks" class="py-12 bg-bde-cream scroll-mt-48">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
                 <div class="md:w-1/3">
@@ -222,27 +222,38 @@
                     <!-- Frappuccinos -->
                     <div class="mb-8">
                         <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Frappuccinos</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-2 text-sm text-center text-bde-brown">
+                            <div class="col-span-1"></div>
+                            <div>16 oz</div>
+                            <div>24 oz</div>
+                        </div>
                         <div class="space-y-4">
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Sweet</div>
+                            <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
                                 <div class="text-bde-brown">
-                                    16 oz: $5.75<br>
-                                    24 oz: $6.50
+                                    Chocolate and White Chocolate Caramel
                                 </div>
+                                <div class="text-center text-bde-brown">$5.75</div>
+                                <div class="text-center text-bde-brown">$6.50</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Banana Split</div>
+                        </div>
+                    </div>
+
+                    <!-- Smoothies -->
+                    <div class="mb-8">
+                        <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Smoothies</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-2 text-sm text-center text-bde-brown">
+                            <div class="col-span-1"></div>
+                            <div>16 oz</div>
+                            <div>24 oz</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
                                 <div class="text-bde-brown">
-                                    16 oz: $6.50<br>
-                                    24 oz: $7.75
+                                    Strawberry, Mango, Banana, Green Harvest<br>
+                                    Aloha Pineapple, Blooming Berry, Peach
                                 </div>
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Apple Pie a la mode</div>
-                                <div class="text-bde-brown">
-                                    16 oz: $7.00<br>
-                                    24 oz: $8.00
-                                </div>
+                                <div class="text-center text-bde-brown">$6.50</div>
+                                <div class="text-center text-bde-brown">$7.75</div>
                             </div>
                         </div>
                     </div>
@@ -250,30 +261,79 @@
                     <!-- Refreshers -->
                     <div class="mb-8">
                         <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Refreshers</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-2 text-sm text-center text-bde-brown">
+                            <div class="col-span-1"></div>
+                            <div>16 oz</div>
+                            <div>24 oz</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                                <div class="text-bde-brown">
+                                    Lemonade, Strawberry, Mango-Passion,<br>
+                                    Kiwi-Mint-Lemongrass, Dragonfruit-Elderberry,<br>
+                                    and Watermelon-Cucumber-Mint
+                                </div>
+                                <div class="text-center text-bde-brown">$6.00</div>
+                                <div class="text-center text-bde-brown">$6.75</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hot Chocolate -->
+                    <div class="mb-8">
+                        <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Hot Chocolate</h3>
+                        <div class="grid grid-cols-3 gap-4 mb-2 text-sm text-center text-bde-brown">
+                            <div class="col-span-1"></div>
+                            <div>12 oz</div>
+                            <div>16 oz</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                                <div class="text-bde-brown">Hot Chocolate</div>
+                                <div class="text-center text-bde-brown">$3.50</div>
+                                <div class="text-center text-bde-brown">$4.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Affogato -->
+                    <div class="mb-8">
+                        <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Affogato</h3>
                         <div class="space-y-4">
                             <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Smoothies<br>
-                                    <span class="text-sm">(Strawberry, Mango, Banana, Green Harvest, Blooming Berry)</span>
+                                <div class="text-bde-brown">
+                                    1 scoop of ice cream with 2 shots of espresso poured over it.
                                 </div>
-                                <div class="text-bde-brown">$6.00</div>
+                                <div class="text-bde-brown text-right">$5.00</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tea -->
-                    <div>
+                    <div class="mb-8">
                         <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Tea</h3>
+                        <div class="grid grid-cols-5 gap-4 mb-2 text-sm text-center text-bde-brown">
+                            <div class="col-span-1"></div>
+                            <div class="col-span-2 text-center">HOT</div>
+                            <div class="col-span-2 text-center">ICED</div>
+                        </div>
+                        <div class="grid grid-cols-5 gap-4 mb-2 text-sm text-center text-bde-brown">
+                            <div class="col-span-1"></div>
+                            <div>12 oz</div>
+                            <div>16 oz</div>
+                            <div>16 oz</div>
+                            <div>24 oz</div>
+                        </div>
                         <div class="space-y-4">
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Tea<br>
-                                    <span class="text-sm">(Green, Earl Grey, Hibiscus and Japanese Black Tea)</span>
-                                </div>
+                            <div class="grid grid-cols-5 gap-4 py-2 border-b border-bde-cream">
                                 <div class="text-bde-brown">
-                                    12 oz: $3.00<br>
-                                    16 oz: $3.50<br>
-                                    16 oz Iced: $3.00<br>
-                                    24 oz Iced: $3.50
+                                    Green Mint, Earl Gray,<br>
+                                    Hibiscus, Japanese Black
                                 </div>
+                                <div class="text-center text-bde-brown">$3.00</div>
+                                <div class="text-center text-bde-brown">$3.50</div>
+                                <div class="text-center text-bde-brown">$3.00</div>
+                                <div class="text-center text-bde-brown">$3.50</div>
                             </div>
                         </div>
                     </div>
@@ -283,83 +343,153 @@
     </section>
 
     <!-- Crepes -->
-    <section id="crepes" class="py-12 bg-white scroll-mt-16">
+    <section id="crepes" class="py-12 bg-white scroll-mt-48">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
-                <div class="md:w-1/3 text-center order-2 md:order-1">
-                    <h2 class="font-quicksand font-bold text-3xl text-bde-brown mb-4">Crepes</h2>
-                    <p class="text-bde-orange">Sweet and savory crepes made fresh to order</p>
-                </div>
-                <div class="md:w-1/3 order-1 md:order-2">
+                <div class="md:w-1/3">
                     <img src="/images/learning_crepes.jpg" 
                          alt="Making delicious crepes" 
                          class="rounded-lg shadow-lg w-full h-64 object-cover object-center"
                          width="400"
                          height="256">
                 </div>
+                <div class="md:w-1/3 text-center">
+                    <h2 class="font-quicksand font-bold text-3xl text-bde-brown mb-4">Crepes</h2>
+                    <p class="text-bde-orange">Sweet and savory crepes made with love</p>
+                </div>
             </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-bde-cream rounded-lg shadow-lg p-6">
-                    <!-- Sweet Crepes -->
-                    <div class="mb-8">
-                        <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Sweet</h3>
-                        <div class="space-y-4">
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Sweet<br>
-                                    <span class="text-sm">(Nutella, Banana and Strawberry, topped with whipped cream)</span>
-                                </div>
-                                <div class="text-bde-brown">$7.00</div>
+
+            <!-- Sweet Crepes -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-6">Sweet Crepes</h3>
+                    <div class="space-y-6">
+                        <!-- Sweet -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Sweet</div>
+                                <div class="text-sm text-bde-brown">Nutella, Banana OR Strawberry and topped with whipped cream and chocolate sauce</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Banana Split<br>
-                                    <span class="text-sm">(Cream and chocolate sauce and topped with ice cream)</span>
-                                </div>
-                                <div class="text-bde-brown">$8.00</div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$9.00</div>
+                        </div>
+
+                        <!-- Banana Split -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Banana Split</div>
+                                <div class="text-sm text-bde-brown">Nutella, Banana AND Strawberry and topped with whipped cream and chocolate sauce</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Apple Pie a la mode<br>
-                                    <span class="text-sm">(Apple pie filling, topped with ice cream and caramel)</span>
-                                </div>
-                                <div class="text-bde-brown">$7.00</div>
+                            <div class="text-center text-bde-brown">Small<br>$8.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Chocolate Strawberry -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Chocolate Strawberry</div>
+                                <div class="text-sm text-bde-brown">Chocolate crepe filled with strawberry creamed cheese and topped with strawberries, whipped cream and chocolate sauce</div>
                             </div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Turtle -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Turtle</div>
+                                <div class="text-sm text-bde-brown">Chocolate crepe filled with caramel sauce and topped with whipped cream, chocolate and caramel sauce and chopped pecans</div>
+                            </div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Cinnamon Roll -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Cinnamon Roll Crepe</div>
+                                <div class="text-sm text-bde-brown">Butter, brown sugar and cinnamon, and topped with cream cheese frosting</div>
+                            </div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Caramel Apple Pie -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Caramel Apple Pie al a mode</div>
+                                <div class="text-sm text-bde-brown">Apple pie filling with brown sugar and cinnamon, topped with ice cream and caramel sauce</div>
+                            </div>
+                            <div class="text-center text-bde-brown">Small<br>$8.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Savory Crepes -->
-                    <div>
-                        <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-4">Savory</h3>
-                        <div class="space-y-4">
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Breakfast<br>
-                                    <span class="text-sm">(Sausage or Chorizo and topped with salsa)</span>
-                                </div>
-                                <div class="text-bde-brown">$7.00</div>
+            <!-- Savory Crepes -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="font-quicksand font-bold text-2xl text-bde-brown mb-6">Savory Crepes</h3>
+                    <div class="space-y-6">
+                        <!-- Breakfast -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Breakfast</div>
+                                <div class="text-sm text-bde-brown">Scrambled eggs, cheese, your choice of bacon, sausage, or chorizo, and topped with salsa</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Ham and Cheese<br>
-                                    <span class="text-sm">(Diced Ham and Swiss Crepe, Dijon/mayo)</span>
-                                </div>
-                                <div class="text-bde-brown">$7.00</div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Ham and Cheese -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Ham and Cheese</div>
+                                <div class="text-sm text-bde-brown">Diced ham and Swiss/Gruyere cheese with a Dijon/Mayo sauce</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Chicken Alfredo<br>
-                                    <span class="text-sm">(Sauce, Roasted Garlic and Mozzarella)</span>
-                                </div>
-                                <div class="text-bde-brown">$7.00</div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$9.00</div>
+                        </div>
+
+                        <!-- BBQ -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">BBQ</div>
+                                <div class="text-sm text-bde-brown">Pulled Pork or Chicken with BBQ sauce, and topped with coleslaw and BBQ sauce drizzle</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Caprese<br>
-                                    <span class="text-sm">(Grape Tomatoes, Pesto, Mozzarella and topped with Balsamic Dressing)</span>
-                                </div>
-                                <div class="text-bde-brown">$7.00</div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Taco -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Taco</div>
+                                <div class="text-sm text-bde-brown">Taco meat and cheese, and topped with lettuce, sour cream and salsa. Guacamole add on if desired</div>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 py-2 border-b border-bde-cream">
-                                <div class="text-bde-brown">Christmas Morning<br>
-                                    <span class="text-sm">(Turkey, Apples, Brie and topped with Cranberry Sauce)</span>
-                                </div>
-                                <div class="text-bde-brown">$9.00</div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Hawaiian -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Hawaiian</div>
+                                <div class="text-sm text-bde-brown">Pizza sauce, mozzarella cheese and Canadian bacon, and topped with pizza sauce drizzle and crushed pineapple</div>
                             </div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
+                        </div>
+
+                        <!-- Caprese -->
+                        <div class="grid grid-cols-3 gap-4 py-2 border-b border-bde-cream">
+                            <div class="col-span-1">
+                                <div class="font-quicksand font-semibold text-bde-brown">Caprese</div>
+                                <div class="text-sm text-bde-brown">Basil Pesto and sliced mozzarella cheese, and topped with balsamic dressing and grape tomatoes</div>
+                            </div>
+                            <div class="text-center text-bde-brown">Small<br>$7.00</div>
+                            <div class="text-center text-bde-brown">Large<br>$10.00</div>
                         </div>
                     </div>
                 </div>
@@ -368,7 +498,7 @@
     </section>
 
     <!-- Ice Cream -->
-    <section id="ice-cream" class="py-12 bg-bde-cream scroll-mt-16">
+    <section id="ice-cream" class="py-12 bg-bde-cream scroll-mt-48">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
                 <div class="md:w-1/3">
@@ -415,59 +545,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Add-ons Section -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="font-quicksand font-bold text-3xl text-center text-bde-brown mb-8">Add-ons & Extras</h2>
-            <div class="max-w-2xl mx-auto bg-bde-cream rounded-lg p-6 shadow-lg">
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-4">Coffee Add-ons</h3>
-                        <ul class="space-y-2">
-                            <li class="flex justify-between">
-                                <span>Extra Shot</span>
-                                <span class="text-bde-orange">$0.75</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>Flavor Syrup</span>
-                                <span class="text-bde-orange">$0.50</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>Whipped Cream</span>
-                                <span class="text-bde-orange">$0.50</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>Alternative Milk</span>
-                                <span class="text-bde-orange">$0.75</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-quicksand font-semibold text-xl text-bde-brown mb-4">Crepe Add-ons</h3>
-                        <ul class="space-y-2">
-                            <li class="flex justify-between">
-                                <span>Extra Protein</span>
-                                <span class="text-bde-orange">$2.00</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>Extra Cheese</span>
-                                <span class="text-bde-orange">$1.50</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>Extra Sauce</span>
-                                <span class="text-bde-orange">$0.75</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>Add Ice Cream</span>
-                                <span class="text-bde-orange">$2.00</span>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
